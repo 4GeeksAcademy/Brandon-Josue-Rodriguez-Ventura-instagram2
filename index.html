@@ -1,0 +1,234 @@
+<Html>
+    <head>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+            />
+            <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+            <title>Proyecto de bootstrap</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand col-10" href="#"> <i class="fa-brands fa-instagram"></i> Instagram</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Create a new post
+                    </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-gear"></i>
+                </a>
+                <ul class="dropdown-menu col-1" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                  <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                  <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                </div>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h5>Caption:</h5>
+              <textarea class="form-control" placeholder="add the caption of your post here" id="message-text"></textarea>
+              <button><i class="fa-solid fa-camera text-between"></i></button>
+              <button><i class="fa-solid fa-location-pin text-between"></i></button>
+            </div>
+            
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Publish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid p-2">
+        <ul class="nav nav-pill justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                    role="tab" aria-controls="home" aria-selected="true">
+                    <i class="fa-solid fa-table-cells"></i></a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                    role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"></i></a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active overflow-hidden" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row">
+                    <div class="col-4 p-1"> <img style="height: 30vw; width: 30vw;" src="https://cdn.pixabay.com/photo/2024/05/22/16/37/seagull-8781110_1280.jpg" class="img-fluid w-100" alt="ave">
+                    </div>
+                    <div class="col-4 p-1"> <img style="height: 30vw; width: 30vw;" src="https://media.istockphoto.com/id/1253824909/photo/fish-boat-vessel-fishing-in-a-rough-sea-industrial-trawler.jpg?s=2048x2048&w=is&k=20&c=HYv4KV4GjTc0PbVzBqrTT63yJx48gFAxZDdSyP0fDLY=" class="img-fluid w-100" alt="barco"></div>
+                    <div class="col-4 p-1"> <img style="height: 30vw; width: 30vw;" src="https://cdn.pixabay.com/photo/2024/12/28/03/31/green-tree-python-9295182_1280.jpg" class="img-fluid w-100" alt=" serpiente"></div>
+                </div>
+                <div class="row">
+                    <div class="col-4 p-1"><img style="height: 30vw; width: 30vw;" src="https://cdn.pixabay.com/photo/2020/09/19/23/42/architecture-5585737_1280.jpg" class="img-fluid w-100" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 30vw; width: 30vw;" src="https://cdn.pixabay.com/photo/2024/10/26/11/15/subway-9151034_1280.jpg" class="img-fluid w-100" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 30vw; width: 30vw;" src="https://cdn.pixabay.com/photo/2016/11/18/22/31/architecture-1837176_1280.jpg" class="img-fluid w-100" alt=""></div>
+                </div>
+                <div class="row">
+                <div class="col-4 p-1"><img style="height: 30vw; width: 30vw;" src="https://cdn.pixabay.com/photo/2023/05/06/13/49/wachapreague-7974344_1280.jpg" class="img-fluid w-100" alt=""></div>
+                <div class="col-4 p-1"><img style="height: 30vw; width: 30vw;" src="https://cdn.pixabay.com/photo/2017/03/17/21/32/shell-2152731_1280.jpg" class="img-fluid w-100" alt=""></div>
+                <div class="col-4 p-1"><img style="height: 30vw; width: 30vw;" src="https://cdn.pixabay.com/photo/2023/05/08/15/14/snail-7978955_1280.jpg" class="img-fluid w-100"  alt=""></div>
+                </div>
+            </div>
+            <div class="tab-pane fade overflow-hidden" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="container-fluid">
+                    <div class="row ">
+                        <div class="col-3"></div>
+                        <div class="col-6 my-4 ">
+                            <div class="container border rounded d-flex">
+                                <div class="col-11">
+                                <h2>Una gaviota!!</h2>
+                                </div>
+                                <div class="col-1 justify-content-end"> <h5>06/10</h5> </div>
+                                </div>
+                                <img style="width: 100%;" src="https://cdn.pixabay.com/photo/2024/05/22/16/37/seagull-8781110_1280.jpg" alt=""> 
+                                <h5>267 Likes</h5>
+                                <p>Me sorprende la distancia que alcanza la camara como para tomar a una gaviota con tanto detalle</p>
+                            <div class="container border rounder d-flex">
+                                <div class="col-11">
+                                    <h2>Salvaje pero Hermoso</h2>
+                                </div>
+                                <div class="col-1 justify-content-end"> <h5>05/29</h5> </div>
+                            </div>
+                                <img style="width: 100%;"  src="https://media.istockphoto.com/id/1253824909/photo/fish-boat-vessel-fishing-in-a-rough-sea-industrial-trawler.jpg?s=2048x2048&w=is&k=20&c=HYv4KV4GjTc0PbVzBqrTT63yJx48gFAxZDdSyP0fDLY=" alt="">
+                                <h5>420 Likes</h5>
+                                <p>El mar es una salvajada pero nos regala imagenes hermosas como esta</p>
+                            </div>
+                    </div>
+                            <div class="row">
+                              <div class="col-3"></div>
+                              <div class="col-6">
+                                <div class="container border rouner d-flex">
+                                  <div class="col-11">
+                                    <h2>Pura belleza escamosa</h2>
+                                    </div>
+                                    <div class="col-1"> <h5>05/17</h5> 
+                                      </div>
+                                      </div>
+                                      <img style="width: 100%;" src="https://cdn.pixabay.com/photo/2024/12/28/03/31/green-tree-python-9295182_1280.jpg" alt=""> 
+                                      <h5>383 Likes</h5>
+                                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae sint porro, sapiente commodi saepe voluptas numquam deserunt magni ex aliquam ad aut dolor ullam voluptatem est voluptatum cum provident libero?</p>
+                                    </div> 
+                            </div>
+                                    <div class="row">
+                                      <div class="col-3"></div>
+                                      <div class="col-6">
+                                          <div class="container border rouner d-flex">
+                                            <div class="col-11">
+                                              <h2>Cielo</h2>
+                                              </div>
+                                              <div class="col-1"><h5>05/10</h5></div>
+                                              </div>
+                                              <img style="width: 100%; height: 600px;" src="https://cdn.pixabay.com/photo/2020/09/19/23/42/architecture-5585737_1280.jpg" alt="">
+                                              <h5>200 Likes</h5>
+                                              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus corporis dolor rem cumque sunt. Consectetur voluptatem perferendis iste? Nam harum dolorum optio perspiciatis error, magni vel perferendis veritatis beatae numquam?</p>
+                                        </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-3"></div>
+                                          <div class="col-6">
+                                            <div class="container border rouner d-flex">
+                                              <div class="col-11">
+                                                <h2>Solo unas escaleras</h2>
+                                                </div>
+                                                <div class="col-1"><h5>04/30</h5></div>
+                                                </div>
+                                                <img style="width: 100%;" src="https://cdn.pixabay.com/photo/2024/10/26/11/15/subway-9151034_1280.jpg" alt="">
+                                                <h5>1239 Likes</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto voluptatibus vitae animi, ipsum, placeat harum consequatur saepe doloremque numquam reiciendis sed neque quod incidunt vero odio voluptatem aperiam deserunt recusandae?</p>
+                                              </div>
+                                        </div>
+                                              <div class="row">
+                                                <div class="col-3"></div>
+                                                <div class="col-6">
+                                                  <div class="container border rouner d-flex">
+                                                    <div class="col-11">
+                                                      <h2>Como una colonia de Hormigas</h2>
+                                                      </div>
+                                                      <div class="col-1"><h5>04/27</h5></div>
+                                                  </div>
+                                                  <img style="width: 100%;" src="https://cdn.pixabay.com/photo/2016/11/18/22/31/architecture-1837176_1280.jpg" alt="">
+                                                  <h5>785 Likes</h5>
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint in nesciunt reiciendis repellat quam quia praesentium quisquam deserunt, at vitae eveniet ex voluptatem nisi voluptates, tenetur quaerat, laboriosam aut maiores.</p>
+                                                </div>
+                                                </div>
+                                                <div class="row">
+                                                  <div class="col-3"></div>
+                                                  <div class="col-6">
+                                                    <div class="container border rouner d-flex">
+                                                      <div class="col-11">
+                                                        <h2>Demasiada Agua</h2>
+                                                        </div>
+                                                        <div class="col-1"><h5>04/20</h5></div>
+                                                        </div>
+                                                        <img style="width: 100%;" src="https://cdn.pixabay.com/photo/2023/05/06/13/49/wachapreague-7974344_1280.jpg" alt="">
+                                                        <h5>590 Likes</h5>
+                                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero natus numquam eos rerum sed sunt quibusdam suscipit amet eligendi illo earum totam incidunt velit hic veritatis dolorum, voluptatibus, asperiores sequi?</p>
+                                                      </div>
+                                                      </div>
+                                                      <div class="row">
+                                                        <div class="col-3"></div>
+                                                        <div class="col-6">
+                                                          <div class="container border rouner d-flex">
+                                                            <div class="col-11">
+                                                              <h2>Conchas de mar</h2>
+                                                            </div>
+                                                            <div class="col-1"><h5>04/15</h5></div>
+                                                          </div>
+                                                          <img style="width: 100%;" src="https://cdn.pixabay.com/photo/2017/03/17/21/32/shell-2152731_1280.jpg" alt="">
+                                                          <h5>1090 Likes</h5>
+                                                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus fugiat, quisquam ducimus tempora assumenda dolore. Praesentium amet temporibus aliquid totam perferendis sapiente quae dicta natus maxime, nihil repellat id blanditiis.</p>
+                                                          </div>
+                                                          </div>
+                                                          <div class="row">
+                                                            <div class="col-3"></div>
+                                                            <div class="col-6">
+                                                              <div class="container border rouner d-flex">
+                                                                <div class="col-11">
+                                                                  <h2>Alta definicion</h2>
+                                                                  </div>
+                                                                  <div class="col-1"><h5>04/01</h5></div>
+                                                                  </div>
+                                                                  <img style="width: 100%;" src="https://cdn.pixabay.com/photo/2023/05/08/15/14/snail-7978955_1280.jpg" alt="">
+                                                                  <h5>2450 Likes</h5>
+                                                                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo officiis deleniti modi consequuntur placeat suscipit ab veritatis corrupti, quos possimus at obcaecati, minus consequatur temporibus cupiditate alias! Mollitia, ullam earum.</p>
+                                                                </div>
+                                                                </div>
+                            
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+         </body>
+</Html>
